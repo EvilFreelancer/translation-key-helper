@@ -23,10 +23,7 @@
   "autoload": {
     "psr-4": {
       "TranslationKeyHelper\\": "./src"
-    },
-    "files": [
-      "./src/helpers.php"
-    ]
+    }
   },
   "extra": {
     "laravel": {
