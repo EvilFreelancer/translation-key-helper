@@ -1,0 +1,41 @@
+{
+  "name": "evilfreelancer/translation-key-helper",
+  "description": "translation-key-helper",
+  "type": "library",
+  "keywords": [
+    "laravel",
+    "package",
+    "helper"
+  ],
+  "require": {
+    "php": "^7.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^4.0"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Paul Rock",
+      "email": "paul@drteam.rocks"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "TranslationKeyHelper\\": "./src"
+    },
+    "files": [
+      "./src/helpers.php"
+    ]
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "TranslationKeyHelper\\ServiceProvider"
+      ]
+    }
+  },
+  "scripts": {
+    "test": "./vendor/bin/phpunit"
+  }
+}

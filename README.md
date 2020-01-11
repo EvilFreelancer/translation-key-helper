@@ -1,2 +1,4 @@
-# translation-key-helper
-Laravel plugin for displaying translation key in HTML comment nearby test string
+# Translation Key Helper
+
+Laravel plugin for displaying translation key in HTML
+comment nearby test string.
