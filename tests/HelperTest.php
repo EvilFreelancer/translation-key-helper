@@ -9,9 +9,25 @@ class HelperTest extends Orchestra\Testbench\TestCase
         ];
     }
 
+    /**
+     * Dirty hack, but it's working
+     *
+     * @param $obj
+     * @param $name
+     *
+     * @return mixed
+     */
+    private function getProtectedValue($obj, $name)
+    {
+        $array  = (array) $obj;
+        $prefix = chr(0) . '*' . chr(0);
+        return $array[$prefix . $name];
+    }
+
     public function testEchoFormat()
     {
-        $format = \Blade::getEchoFormat();
+        $blade  = resolve('blade.compiler');
+        $format = $this->getProtectedValue($blade, 'echoFormat');
         $this->assertEquals($format, '%s');
     }
 }
