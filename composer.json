@@ -1,6 +1,6 @@
 {
   "name": "evilfreelancer/translation-key-helper",
-  "description": "translation-key-helper",
+  "description": "Laravel plugin for displaying translation key inside HTML comments nearby text strings.",
   "type": "library",
   "keywords": [
     "laravel",

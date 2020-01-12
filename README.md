@@ -1,7 +1,7 @@
 # Translation Key Helper
 
-Laravel plugin for displaying translation key in HTML
-comment nearby test string.
+Laravel plugin for displaying translation key inside HTML
+comments nearby text strings.
 
     composer require evilfreelancer/translation-key-helper --dev
 
@@ -14,10 +14,10 @@ After installation of this plugin you can find lines like this in HTML source co
 ```html
 <ul id="navbar-main" class="navbar-nav">
   <li class="nav-item">
-    <a class="nav-link active" href="http://localhost/posts"><!--navbar.posts--!>Posts</a>
+    <a class="nav-link active" href="http://localhost/posts"><!-- navbar.posts -->Posts</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link " href="http://localhost/news"><!--navbar.news--!>News</a>
+    <a class="nav-link " href="http://localhost/news"><!-- navbar.news -->News</a>
   </li>
 </ul>
 ```

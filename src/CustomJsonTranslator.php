@@ -26,7 +26,7 @@ class CustomJsonTranslator extends BaseTranslator
         $translation = parent::get($key, $replace, $locale, $fallback);
 
         if (config('app.debug') === true) {
-            $translation = '<!--' . $key . '--!>' . $translation;
+            $translation = '<!-- ' . $key . ' -->' . $translation;
         }
 
         return $translation;
@@ -42,12 +42,12 @@ class CustomJsonTranslator extends BaseTranslator
      *
      * @return string
      */
-    public function choice($key, $number, array $replace = [], $locale = null)
+    public function choice($key, $number, array $replace = [], $locale = null): string
     {
         $translation = parent::choice($key, $number, $replace, $locale);
 
         if (config('app.debug') === true) {
-            $translation = '<!--' . $key . '--!>' . $translation;
+            $translation = '<!-- ' . $key . ' -->' . $translation;
         }
 
         return $translation;
