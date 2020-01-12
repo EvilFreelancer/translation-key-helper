@@ -21,3 +21,14 @@ After installation of this plugin you can find lines like this in HTML source co
   </li>
 </ul>
 ```
+
+### Note
+
+If you use VueJs, then you need to allow comments inside the div#app block
+
+```js
+const app = new Vue({
+    el: '#app',
+	comments: true, // When set to true, HTML comments found in templates will be saved and rendered. Default: false
+});
+```
